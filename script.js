@@ -12,7 +12,12 @@ function handleSubmit(event) {
     // JSON.parse() converts JSON to an object - input.value captures the user input
     let menu = JSON.parse(input.value);
     // Use textContent to inject text into the count paragraph
-    count.textContent = "We have " + menu.length + " items today."
+    count.textContent = "We have " + menu.length + " items today.";
+    menuText.textContent = "";
+    for (let i = 0; i < menu.length; i++) {
+        menuText.textContent =
+          menuText.textContent + menu[i].name + " — $" + menu[i].price + "\n";
+    }
 }
 
 // Attach an event listener to the form that listens for submit
