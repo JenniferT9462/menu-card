@@ -10,7 +10,14 @@
     <h1>Waffle Wagon - Menu Card</h1>
     <form id="menu-form">
       <label for="menu-input">Paste your menu as JSON</label>
-      <textarea id="menu-input" rows="8"></textarea>
+      <textarea id="menu-input" rows="8">
+        [
+          {"name": "Taco", "price": 4.5},
+          {"name": "Burrito", "price": 9},
+          {"name": "Nachos", "price": 6.25},
+          {"name": "Churro", "price": 3}
+        ]
+      </textarea>
 
       <button type="submit">Show my menu</button>
     </form>
