@@ -27,10 +27,19 @@ button {
     border-radius: 4px;
     border: none;
     color: white;
+    cursor: pointer;
+}
+
+button:hover {
+  background-color: #e74435;
 }
 
 #menu-text {
     white-space: pre-line;
     background-color: #2b2b2b;
     color: white;
+}
+
+p {
+    text-align: center;
 }
